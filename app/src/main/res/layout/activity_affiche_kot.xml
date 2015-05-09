@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+   tools:context="be.timtac.ephec.AfficheKot"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content" >
+
+<LinearLayout
+    android:id="@+id/monlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+	<TextView
+        android:id="@+id/titreKot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Détail d'un kot"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textStyle="bold" />
+	
+	<TextView
+        android:id="@+id/nbvues"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0 vues"
+        android:textSize="15sp"
+        android:gravity="center" />
+	
+	<ImageView 
+	    android:layout_marginTop="10sp"
+	    android:layout_width="160dp"
+	    android:layout_height="160dp"
+	    android:layout_gravity="center"
+	    android:id="@+id/kot" />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textSize="12sp"
+	    android:textStyle="italic"
+	    android:text="Toucher pour agrandir"
+	    android:layout_gravity="center"
+	    android:id="@+id/changeim" />
+	
+
+		<TextView
+		    android:id="@+id/loyer"
+		    android:layout_marginTop="15sp"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    android:textSize="17sp"
+		    android:text="Loyer (en €) : " />
+	    
+	    <TextView
+	        android:id="@+id/surface"
+	        android:layout_marginTop="5sp"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    android:textSize="17sp"
+		    android:text="Surface (en m²) : " />
+	        	    
+
+	    <TextView
+	        android:id="@+id/bail"
+	        android:layout_marginTop="5sp"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    android:textSize="17sp"
+		    android:text="Bail (en mois) : " />
+	    
+	    <TextView
+	        android:id="@+id/nbchambres"
+	        android:layout_marginTop="5sp"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    android:textSize="17sp"
+		    android:text="Nombre chambres" />
+	       
+	    
+	    <TextView
+	        android:id="@+id/nbcollocs"
+	        android:layout_marginTop="5sp"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    android:textSize="17sp"
+		    android:text="Nombre de collocs" />
+
+	
+	<CheckBox
+	    android:id="@+id/parking"
+	    android:layout_marginTop="5sp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+	    android:text="Parking"
+	    />
+	
+	<CheckBox
+	    android:id="@+id/jardin"
+	    android:layout_marginTop="5sp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+	    android:text="Jardin"
+	    />
+	
+	<CheckBox
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+	    android:id="@+id/charge"
+	    android:text="Charge comprises"
+	    />
+	
+	<CheckBox
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+	    android:id="@+id/internet"
+	    android:text="Internet"
+	    />
+	
+	<CheckBox
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+	    android:id="@+id/fumeur"
+	    android:text="Kot fumeur"
+	    />
+	
+	<CheckBox
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+	    android:id="@+id/menage"
+	    android:text="Menage compris"
+	    />
+	
+	<CheckBox
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+	    android:id="@+id/animaux"
+	    android:text="Animaux admis"
+	    />
+	
+	<TextView
+	    android:id="@+id/txtsupp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+	    android:layout_marginTop="15sp"
+	    android:textSize="16sp"
+	    android:textStyle="bold"
+	    android:text="Description supplémentaire du propriétaire :"
+	    />
+	
+	<TextView
+	    android:id="@+id/supp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+	    android:layout_marginTop="15sp"
+	    android:textSize="17sp"
+	    android:textStyle="italic"
+	    android:text="Description supplémentaire"
+	    />
+
+	    
+	    <Button 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/mailproprio"
+	    android:paddingLeft="50sp"
+	    android:paddingRight="50sp"
+	    android:layout_marginTop="20sp"
+	    android:text="Contacter le propriétaire"
+	    android:layout_gravity="center"
+	    android:gravity="center" />
+	    
+	    <Button 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/mailadmin"
+	    android:paddingLeft="30sp"
+	    android:paddingRight="30sp"
+	    android:layout_marginTop="15sp"
+	    android:text="Avertir l'administrateur"
+	    android:layout_gravity="center"
+	    android:gravity="center" />
+	    
+	    <Button 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/gotomap"
+	    android:paddingLeft="30sp"
+	    android:paddingRight="30sp"
+	    android:layout_marginTop="15sp"
+	    android:text="Retour à la map"
+	    android:layout_gravity="center"
+	    android:gravity="center" />
+	    
+
+	
+	
+</LinearLayout>
+</ScrollView>

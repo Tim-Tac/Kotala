@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content" >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    tools:context="be.timtac.ephec.Filtre" >
+
+    <TextView
+        android:id="@+id/filtre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filtrez les kots que vous voulez"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textStyle="bold" />
+
+    
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10sp" >
+        
+       <TextView
+        android:id="@+id/msgprixmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Loyer minimal (€) : "
+        /> 
+    
+    <EditText
+        android:id="@+id/prixmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Prix min"
+        />          
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10sp" >
+        
+       <TextView
+        android:id="@+id/msgprixmax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Loyer maximal (€) : "
+        /> 
+    
+    <EditText
+        android:id="@+id/prixmax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Prix max"
+        />          
+    </LinearLayout>
+    
+    
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10sp" >
+        
+       <TextView
+        android:id="@+id/msgsurface"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Surface minimale (m²) : "
+        /> 
+    
+    <EditText
+        android:id="@+id/surfacemin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="surface min"
+        />          
+    </LinearLayout>
+    
+    
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10sp" >
+        
+       <TextView
+        android:id="@+id/msgbail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Bail minimum (mois) : "
+        /> 
+    
+    <EditText
+        android:id="@+id/bail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="bail min"
+        />          
+    </LinearLayout>
+    
+    
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10sp" >
+        
+       <TextView
+        android:id="@+id/msgcolocs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Nombre de colocs mininum : "
+        /> 
+    
+    <EditText
+        android:id="@+id/nbcolocsmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="min"
+        />          
+    </LinearLayout>
+    
+    
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10sp" >
+        
+       <TextView
+        android:id="@+id/msgcolocs2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Nombre de colocs maximum : "
+        /> 
+    
+    <EditText
+        android:id="@+id/nbcolocsmax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="max"
+        />          
+    </LinearLayout>
+    
+    
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10sp" >
+        
+       <TextView
+        android:id="@+id/msgchambres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Nombre de chambres minimum : "
+        /> 
+    
+    <EditText
+        android:id="@+id/nbchambres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Prix min"
+        />          
+    </LinearLayout>
+    
+
+    <!-- fin des edittexts -->
+     
+    <LinearLayout 
+        android:layout_marginTop="20sp"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal" >
+    	      
+        	 <TextView
+	        android:id="@+id/msgdist"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="18sp"
+	        android:text="Dans un rayon de :"
+	        /> 
+        
+	        <EditText
+	        android:id="@+id/distance"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:inputType="number"
+	        android:hint="99999"
+	        />
+	         
+	         <TextView
+	        android:id="@+id/msgdist2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="18sp"
+	        android:text="mètres"
+	        /> 
+         
+     </LinearLayout>
+     
+   
+      <LinearLayout
+          android:layout_marginTop="25sp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal" 
+          android:gravity="center" 
+          android:layout_gravity="center" >
+
+          <Button
+              android:id="@+id/filtreavance"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Filtre avancé" />
+
+          <Button
+              android:id="@+id/envoyer"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="7sp"
+              android:paddingLeft="15sp"
+              android:paddingRight="15sp"
+              android:text="Envoyer" />
+          
+      </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

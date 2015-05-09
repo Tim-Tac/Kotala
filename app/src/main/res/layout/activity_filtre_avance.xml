@@ -1,0 +1,289 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    tools:context="be.timtac.ephec.FiltreAvance" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filtre avancé"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Charges comprises" />
+    
+    <RadioGroup 
+        android:id="@+id/rgcharge"
+        android:layout_width="match_parent"
+  		android:layout_height="wrap_content"
+  		android:orientation="horizontal"
+  		android:checkedButton="@+id/charge" >
+        
+        <RadioButton
+        android:id="@+id/chargeoui"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="oui"
+        />
+        
+        <RadioButton
+        android:id="@+id/chargenon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="non"
+        />
+        
+         <RadioButton
+        android:id="@+id/charge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="peu importe"
+        />
+    </RadioGroup>
+    
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parking privé" />
+    
+    <RadioGroup
+        android:id="@+id/rgparking"
+        android:layout_width="match_parent"
+  		android:layout_height="wrap_content"
+  		android:orientation="horizontal"
+  		android:checkedButton="@+id/parking" >
+        
+        <RadioButton
+        android:id="@+id/parkingoui"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="oui"
+        />
+        
+        <RadioButton
+        android:id="@+id/parkingnon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="non"
+        />
+        
+        <RadioButton
+        android:id="@+id/parking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="peu importe"
+        />  
+    </RadioGroup>
+    
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Animal toléré" />
+    
+    <RadioGroup
+        android:id="@+id/rganimal"
+        android:layout_width="match_parent"
+  		android:layout_height="wrap_content"
+  		android:orientation="horizontal"
+  		android:checkedButton="@+id/animal" >
+        
+        <RadioButton
+        android:id="@+id/animaloui"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="oui"
+        />
+        
+        <RadioButton
+        android:id="@+id/animalnon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="non"
+        />     
+        
+        <RadioButton
+        android:id="@+id/animal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="peu importe"
+        />     
+    </RadioGroup>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Service ménage" />
+    
+    <RadioGroup
+        android:id="@+id/rgmenage"
+        android:layout_width="match_parent"
+  		android:layout_height="wrap_content"
+  		android:orientation="horizontal"
+  		android:checkedButton="@+id/menage" >
+        
+        <RadioButton
+        android:id="@+id/menageoui"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="oui"
+        />
+        
+        <RadioButton
+        android:id="@+id/menagenon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="non"
+        />
+        
+        <RadioButton
+        android:id="@+id/menage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="peu importe"
+        /> 
+    </RadioGroup>
+    
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Abonnement internet" />
+    
+    <RadioGroup
+        android:id="@+id/rginternet"
+        android:layout_width="match_parent"
+  		android:layout_height="wrap_content"
+  		android:orientation="horizontal"
+  		android:checkedButton="@+id/internet" >
+        
+        <RadioButton
+        android:id="@+id/internetoui"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="oui"
+        />
+        
+        <RadioButton
+        android:id="@+id/internetnon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="non"
+        />
+        
+        <RadioButton
+        android:id="@+id/internet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="peu importe"
+        />  
+    </RadioGroup>
+    
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jardin" />
+    
+    <RadioGroup
+        android:id="@+id/rgjardin"
+        android:layout_width="match_parent"
+  		android:layout_height="wrap_content"
+  		android:orientation="horizontal"
+  		android:checkedButton="@+id/jardin" >
+        
+        <RadioButton
+        android:id="@+id/jardinoui"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="oui"
+        />
+        
+        <RadioButton
+        android:id="@+id/jardinnon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="non"
+        />         
+        
+        <RadioButton
+        android:id="@+id/jardin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="peu importe"
+        />
+    </RadioGroup>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fumeur" />
+    
+    <RadioGroup 
+        android:id="@+id/rgfumeur"
+        android:layout_width="match_parent"
+  		android:layout_height="wrap_content"
+  		android:orientation="horizontal"
+  		android:checkedButton="@+id/fumeur" >
+        
+        <RadioButton
+        android:id="@+id/fumeuroui"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="oui"
+        />
+        
+        <RadioButton
+        android:id="@+id/fumeurnon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="non"
+        />         
+        
+        <RadioButton
+        android:id="@+id/fumeur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="peu importe"
+        />
+    </RadioGroup>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:layout_marginTop="20sp"
+        android:gravity="center" >    
+        
+        <Button
+        android:id="@+id/boutonretour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_gravity="center"
+        android:text="Retour" />
+             
+          
+        <Button
+        android:id="@+id/boutonvalider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5sp"
+        android:text="Valider" />
+        
+    </LinearLayout>   
+
+</LinearLayout>

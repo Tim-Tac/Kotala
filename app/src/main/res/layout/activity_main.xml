@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+  	android:layout_height="match_parent"
+  	android:orientation="vertical" 
+  	tools:context="be.timtac.ephec.MainActivity" >
+    
+	<fragment 
+         android:id="@+id/map"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:name="com.google.android.gms.maps.MapFragment"
+         android:layout_weight="1" />
+	
+		<LinearLayout     
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+  		android:layout_height="wrap_content">
+  			    
+  		
+			<Button 
+	    		android:id="@+id/vues"
+	    		android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:layout_gravity="bottom"
+	    		android:layout_weight="2"
+	    		android:background="@drawable/satoui"
+	    		android:textColor="#EEEEEE" />	
+		    
+		    <Button 
+			    android:id="@+id/connexion"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="@string/connexion"
+			    android:layout_weight="2"
+			    android:background="#EEEEEE"
+			    android:textColor="#3C98DE" />
+		    
+		    <Button
+			    android:id="@+id/filtre"
+			    android:layout_width="48sp"
+			    android:layout_height="48sp"
+			    android:layout_gravity="bottom"
+			    android:background="@drawable/imagekot"
+			    android:layout_weight="1"
+	    		android:textColor="#4DA9EF" />
+		    
+		    <Button
+			    android:id="@+id/ajout"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="bottom"
+			    android:text="Ajouter kot"
+			    android:layout_weight="2"
+			    android:background="#eeeeee"
+	    		android:textColor="#3C98DE" />
+			
+		</LinearLayout>	
+		
+</LinearLayout>

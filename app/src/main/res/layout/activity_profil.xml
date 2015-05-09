@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content" >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="be.timtac.ephec.Connexion" >
+
+	<TextView
+        android:id="@+id/titreprofil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Votre profil"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:textStyle="bold" />
+	
+	<LinearLayout
+	android:layout_marginTop="10sp"    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+	
+	<TextView
+        android:id="@+id/msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:text="Bonjour  "
+        android:gravity="center" />
+	
+	<TextView
+        android:id="@+id/pseudo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:text="invité"
+        android:gravity="center" />
+	
+	</LinearLayout>
+	
+	<LinearLayout
+	android:layout_marginTop="10sp"    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+	
+	<TextView
+        android:id="@+id/msgemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:text="Votre email : "
+        android:gravity="center" />
+	
+	<EditText
+        android:id="@+id/email"
+        android:layout_width="220sp"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:inputType="textEmailAddress"
+        android:hint=""
+        android:gravity="center" />
+	
+	</LinearLayout>
+	
+	<LinearLayout
+	android:layout_marginTop="5sp"    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+	
+	<TextView
+        android:id="@+id/msgtel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:text="Votre téléphone : "
+        android:gravity="center" />
+	
+	<EditText
+        android:id="@+id/tel"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:hint=""
+        android:gravity="center" />
+	
+	</LinearLayout>
+	
+	<LinearLayout
+	android:layout_marginTop="5sp"    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+	
+	    <TextView
+        android:id="@+id/msgpwda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:text="Mdp actuel : "
+        android:gravity="center" />
+	
+	
+	<EditText
+        android:id="@+id/pwdainfos"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:textSize="17sp"
+        android:hint=""
+        android:gravity="center" />
+	</LinearLayout>
+	
+	<Button 
+	    android:id="@+id/majinfos"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="Mettre à jour"
+	    android:paddingLeft="30sp"
+	    android:paddingRight="30sp"
+	    android:layout_gravity="center"
+	    android:layout_marginTop="10dp"
+	    android:gravity="center"
+	    />
+	
+
+	
+	<LinearLayout
+	android:layout_marginTop="20sp"    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+	
+	<TextView
+        android:id="@+id/msgpwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:text="Nouveau mdp : "
+        android:gravity="center" />
+	
+	<EditText
+        android:id="@+id/pwd"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:inputType="textPassword"
+        android:hint=""
+        android:gravity="center" />
+	
+	</LinearLayout>
+	
+	<LinearLayout
+	android:layout_marginTop="5sp"    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+	
+	<TextView
+        android:id="@+id/msgpwd2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:text="Confirmation : "
+        android:gravity="center" />
+	
+	<EditText
+        android:id="@+id/pwd2"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:textSize="17sp"
+        android:hint=""
+        android:gravity="center" />
+	
+	</LinearLayout>
+	
+	<LinearLayout
+	android:layout_marginTop="5sp"    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+	
+	<TextView
+        android:id="@+id/msgpwda2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:text="Mdp actuel : "
+        android:gravity="center" />
+	
+	<EditText
+        android:id="@+id/pwdapwd"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:textSize="17sp"
+        android:hint=""
+        android:gravity="center" />
+	
+	</LinearLayout>
+	
+	<Button 
+	    android:id="@+id/majpwd"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="Mettre à jour"
+	    android:paddingLeft="30sp"
+	    android:paddingRight="30sp"
+	    android:layout_gravity="center"
+	    android:layout_marginTop="10dp"
+	    android:gravity="center"
+	    />
+	
+	<Button 
+	    android:id="@+id/kots"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="Voir mes kots"
+	    android:paddingLeft="30sp"
+	    android:paddingRight="30sp"
+	    android:layout_gravity="center"
+	    android:layout_marginTop="20sp"
+	    android:gravity="center"
+	    />
+	
+	<Button 
+	    android:id="@+id/deconnexion"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="Déconnexion"
+	    android:paddingLeft="20sp"
+	    android:paddingRight="20sp"
+	    android:layout_gravity="center"
+	    android:layout_marginTop="30sp"
+	    android:gravity="center"
+	    />
+	
+</LinearLayout>
+</ScrollView>

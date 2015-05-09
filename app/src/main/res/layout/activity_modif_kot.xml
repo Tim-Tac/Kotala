@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+   tools:context="be.timtac.ephec.ModifKot"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content" >
+
+<LinearLayout
+    android:id="@+id/monlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+	<TextView
+        android:id="@+id/titreKot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Modification d'un kot"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textStyle="bold" />
+	
+	<LinearLayout 
+	    android:layout_marginTop="10dp"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+	    
+	
+	<ImageView
+	    android:layout_marginLeft="20sp"
+	    android:layout_width="160sp"
+	    android:layout_height="160sp"
+	    android:layout_gravity="center"
+	    android:id="@+id/image"
+	    android:src="@drawable/imagekot" />
+	
+		<LinearLayout 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical" >
+		    
+			<Button
+			    android:id="@+id/modimage"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="Changer image" />
+		    	    
+			<Button
+			    android:id="@+id/modphoto"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:text="Prendre une photo" />
+		</LinearLayout>
+	
+	</LinearLayout>
+	
+	<Button 
+	    android:id="@+id/majimage"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="Mettre à jour l'image" />
+	
+	<LinearLayout 
+	    android:layout_marginTop="10sp"
+	    android:layout_marginBottom="10sp"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+	    
+	    
+	    	<CheckBox 
+		    android:id="@+id/visible"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="est visible"
+		    android:layout_marginTop="15sp"
+		    android:textStyle="italic" />
+	    	
+	    	<Button 
+	    	android:id="@+id/majvis"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:text="Changer la visibilité"
+		    android:layout_marginTop="12sp"
+		    android:layout_marginLeft="10sp" />
+	    
+	</LinearLayout>
+	
+	
+	<LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10sp" >
+	    
+	    <TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textSize="17sp"
+		    android:text="Loyer (en €) : " />
+	    
+	    <EditText 
+	        android:id="@+id/prix"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:hint="prix du loyer" />	   
+	         	    
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10sp" >
+	    
+	    <TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textSize="17sp"
+		    android:text="Surface (en m²) : " />
+	    
+	    <EditText 
+	        android:id="@+id/surface"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:hint="surface du bien" />	    	    
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10sp" >
+	    
+	    <TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textSize="17sp"
+		    android:text="Bail (en mois) : " />
+	    
+	    <EditText 
+	        android:id="@+id/bail"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:hint="durée du bail" />	    	    
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10sp" >
+	    
+	    <TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textSize="17sp"
+		    android:text="Nombre chambres" />
+	    
+	    <EditText 
+	        android:id="@+id/nbchambres"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:hint="nb dispo" />	    	    
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10sp" >
+	    
+	    <TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textSize="17sp"
+		    android:text="Nombre de collocs" />
+	    
+	    <EditText 
+	        android:id="@+id/nbcolocs"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:hint="nb collocs" />	    	    
+	</LinearLayout>
+	
+	
+	<CheckBox
+	    android:layout_marginTop="10sp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/parking"
+	    android:text="Parking"
+	    />
+	
+	<CheckBox
+	    android:id="@+id/jardin"
+	    android:layout_marginTop="5sp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"   
+	    android:text="Jardin"
+	    />
+	
+	<CheckBox
+	    android:layout_marginTop="5sp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/charge"
+	    android:text="Charge comprises"
+	    />
+	
+	<CheckBox
+	    android:layout_marginTop="5sp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/internet"
+	    android:text="Internet"
+	    />
+	
+	<CheckBox
+	    android:layout_marginTop="5sp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/fumeur"
+	    android:text="Kot fumeur"
+	    />
+	
+	<CheckBox
+	    android:layout_marginTop="5sp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/menage"
+	    android:text="Menage compris"
+	    />
+	
+	<CheckBox
+	    android:layout_marginTop="5sp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/animaux"
+	    android:text="Animaux admis"
+	    />
+	
+	<EditText 
+	    android:id="@+id/supp"
+	    android:layout_width="match_parent"
+	    android:layout_marginTop="20sp"
+	    android:layout_height="80sp"
+	    android:hint="Description supplémentaire"
+	    />
+	
+
+
+	<Button 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/valider"
+	    android:paddingLeft="50sp"
+	    android:paddingRight="50sp"
+	    android:layout_marginTop="15sp"
+	    android:text="Valider"
+	    android:layout_gravity="center"
+	    android:gravity="center" />
+	
+</LinearLayout>
+</ScrollView>

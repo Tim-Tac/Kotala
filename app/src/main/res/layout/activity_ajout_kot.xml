@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  tools:context="be.timtac.ephec.AjoutKot" >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="be.timtac.ephec.AjoutKot" >
+
+	<TextView
+        android:id="@+id/titreAjoutKot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ajouter votre propre kot"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textStyle="bold" />
+	
+	<LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_marginTop="20sp" >
+	    
+	    <EditText 
+	    android:id="@+id/rue"	    
+	    android:layout_width="200sp"
+	    android:layout_height="wrap_content"
+	    android:hint="Rue et numéro"
+	    />
+	    
+	     <EditText 
+	    android:id="@+id/cp"	    
+	    android:layout_width="75sp"
+	    android:layout_height="wrap_content"
+	    android:hint="CP"
+	    android:inputType="number"
+	    />   
+	</LinearLayout>
+
+	<EditText 
+	    android:layout_marginTop="20sp"
+	    android:id="@+id/loyer"	    
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:hint="loyer (€)"
+	    android:inputType="number"
+	    />
+	
+	<EditText 
+	    android:layout_marginTop="5sp"
+	    android:id="@+id/surface"	    
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:hint="Surface (m²)"
+	    android:inputType="number"
+	    />
+	
+	<EditText 
+	    android:layout_marginTop="5sp"
+	    android:id="@+id/bail"	    
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:hint="Durée du bail (mois)"
+	    android:inputType="number"
+	    />
+	
+	<EditText 
+	    android:layout_marginTop="5sp"
+	    android:id="@+id/nbchambres"	    
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:hint="Nombre de chambre(s)"
+	    android:inputType="number"
+	    />
+	
+	<EditText 
+	    android:layout_marginTop="5sp"
+	    android:id="@+id/nbcolocs"	    
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:hint="Nombre de colocataire(s)"
+	    android:inputType="number"
+	    />
+	
+	<CheckBox
+	    android:layout_marginTop="10sp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/parking"
+	    android:text="Parking"
+	    />
+	
+	<CheckBox
+	    android:id="@+id/jardin"
+	    android:layout_marginTop="5sp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"   
+	    android:text="Jardin"
+	    />
+	
+	<CheckBox
+	    android:layout_marginTop="5sp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/charge"
+	    android:text="Charge comprises"
+	    />
+	
+	<CheckBox
+	    android:layout_marginTop="5sp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/internet"
+	    android:text="Internet"
+	    />
+	
+	<CheckBox
+	    android:layout_marginTop="5sp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/fumeur"
+	    android:text="Kot fumeur"
+	    />
+	
+	<CheckBox
+	    android:layout_marginTop="5sp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/menage"
+	    android:text="Menage compris"
+	    />
+	
+	<CheckBox
+	    android:layout_marginTop="5sp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/animaux"
+	    android:text="Animaux admis"
+	    />
+	
+	<EditText 
+	    android:id="@+id/supp"
+	    android:layout_width="match_parent"
+	    android:layout_marginTop="20sp"
+	    android:layout_height="60sp"
+	    android:hint="Description supplémentaire"
+	    />
+	
+	<Button
+	    android:id="@+id/select"
+	    android:layout_marginTop="20sp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" 
+	    android:layout_gravity="center"
+	    android:text="Sélectionner une image"/>
+	
+	<Button
+	    android:id="@+id/take"
+	    android:layout_marginTop="20sp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" 
+	    android:layout_gravity="center"
+	    android:text="prendre une photo"/>
+	
+	<ImageView 
+	    android:contentDescription="Image du kot"
+	    android:layout_width="20sp" 
+	    android:layout_height="20sp"
+	    android:id="@+id/monimage"
+	    android:layout_gravity="center" />
+	
+	<Button 
+	    android:id="@+id/ajoutkot"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="Valider"
+	    android:paddingLeft="60sp"
+	    android:paddingRight="60sp"
+	    android:layout_marginBottom="20sp"
+	    android:layout_gravity="center"
+	    android:layout_marginTop="30dp"
+	    android:gravity="center"
+	    />
+	
+</LinearLayout>
+</ScrollView>
